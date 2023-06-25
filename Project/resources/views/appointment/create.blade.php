@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout')
+@section('title','Przychodnia dentystyczna')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gabinet Dentystyczny</title>
-    <!-- Dodaj link do pliku CSS Bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-</head>
-
-<body>
+@section('content')
     <div class="container">
         <h2 class="mt-4">Utwórz nową wizytę</h2>
         <form method="POST" action="/appointment">
@@ -51,9 +42,4 @@
         </form>
         <a href="/">Powrót</a>
     </div>
-
-    <!-- Dodaj skrypty Bootstrap 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+@endsection

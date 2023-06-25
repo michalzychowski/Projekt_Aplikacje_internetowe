@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout')
+@section('title','Przychodnia dentystyczna')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <title>Gabinet Dentystyczny</title>
-</head>
-
-<body>
+@section('content')
     <div class="container">
         @if (auth()->check())
         <div class="jumbotron text-center">
@@ -107,14 +100,7 @@
         <div class="jumbotron text-center">
             <h1 class="display-4">Witaj w naszym gabinecie dentystycznym</h1>
             <p class="lead">Zadbamy o twoje zdrowie i piękny uśmiech</p>
-            <a href="/make-appointment" class="btn btn-primary btn-lg">Umów wizytę</a>
-            <p>Jesteś doktorem?</p>
-            <a href="/login" class="btn btn-primary btn-lg">Zaloguj się</a>
         </div>
         @endif
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+@endsection
