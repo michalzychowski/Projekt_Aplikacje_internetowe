@@ -29,3 +29,6 @@ Route::get('/users/{user}/edit', [UserController::class, "edit"]);
 Route::get('/users/create', [UserController::class, "create"]);
 Route::post('/users', [UserController::class, "store"]);
 Route::delete('/users/{user}', [UserController::class, "destroy"]);
+Route::get('/pricelist', [UserController::class, "pricelist"]);
+Route::get('/description', [UserController::class, "description"]);
+

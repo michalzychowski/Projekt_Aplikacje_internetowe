@@ -11,18 +11,23 @@
                     <a class="nav-link active" aria-current="page" href="/">Strona główna</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">O nas</a>
+                    <a class="nav-link" href="/description">O nas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cennik</a>
+                    <a class="nav-link" href="/pricelist">Cennik</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/make-appointment">Umów wizytę</a>
                 </li>
                 @if (auth()->check())
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Wyloguj się</a>
-                    </li>
+                <li class="nav-item">
+                    <form class="inline" method="POST" action="/logout">
+                        @csrf
+                        <button class="nav-link" type="submit">
+                            Wyloguj się
+                        </button>
+                    </form>
+                </li>
                 @else
                     <li class="nav-item">
                         <a class="nav-link" href="/login">Zaloguj się</a>

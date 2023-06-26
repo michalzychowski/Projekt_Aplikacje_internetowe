@@ -6,12 +6,6 @@
         @if (auth()->check())
         <div class="jumbotron text-center">
             <h1 class="display-4">Witaj, {{ auth()->user()->name }}</h1>
-            <form class="inline" method="POST" action="/logout">
-                @csrf
-                <button class="btn btn-primary btn-lg" type="submit">
-                    Wyloguj się
-                </button>
-            </form>
             <h2>Wizyty</h2>
             <table class="table table-striped">
                 <thead>
@@ -39,7 +33,7 @@
                             <form action="/appointment/{{$appointment->id}}" method="POST">
                                 @csrf
                                 @method("PATCH")
-                                <button>Zaakceptuj</button>
+                                <button class="btn btn-dark">Zaakceptuj</button>
                             </form>
                         </td>
                         @else
@@ -47,7 +41,7 @@
                             <form action="/appointment/{{$appointment->id}}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="text-red-500 hover:text-red-700">
+                                <button type="submit" class="btn btn-danger">
                                     Usuń
                                 </button>
                             </form>
@@ -78,13 +72,13 @@
                         <td>{{$doctor->email}}</td>
                         <td>{{$doctor->phone_number}}</td>
                         <td>
-                            <a href="/users/{{$doctor->id}}/edit">Edytuj</a>
+                            <a href="/users/{{$doctor->id}}/edit" class="btn btn-primary">Edytuj</a>
                         </td>
                         <td>
                             <form action="/users/{{$doctor->id}}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit">
+                                <button type="submit" class="btn btn-danger">
                                     Usuń
                                 </button>
                             </form>
@@ -93,12 +87,12 @@
                     @endforeach
                 </tbody>
             </table>
-            <a href="/users/create">Dodaj nowego lekarza do listy</a>
+            <a href="/users/create" class="btn btn-dark">Dodaj nowego lekarza do listy</a>
             @endif
         </div>
         @else
         <div class="jumbotron text-center">
-            <h1 class="display-4">Witaj w naszym gabinecie dentystycznym</h1>
+            <h1 class="display-4 nazwa">Witaj w naszym gabinecie dentystycznym</h1>
             <p class="lead">Zadbamy o twoje zdrowie i piękny uśmiech</p>
         </div>
         @endif
