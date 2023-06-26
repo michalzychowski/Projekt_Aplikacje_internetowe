@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title','Przychodnia dentystyczna')
+@section('title', 'Przychodnia dentystyczna')
 
 @section('content')
     <div class="container">
@@ -20,7 +20,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Zaloguj się</button>
                 </form>
-                <a href="/">Powrót</a>
+                <a href="/" class="btn btn-info">Powrót</a>
             </div>
         </div>
     </div>

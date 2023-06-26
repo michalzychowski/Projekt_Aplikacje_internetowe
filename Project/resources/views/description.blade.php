@@ -9,8 +9,10 @@
                 <div class="card-body">
                     <p class="card-text">
                         Witaj w naszej ekskluzywnej przychodni dentystycznej, gdzie tworzymy uśmiechy, które promieniują
-                        pewnością siebie i zdrowiem. Nasza elegancka przychodnia dentystyczna to miejsce, w którym połączenie
-                        profesjonalizmu, nowoczesnej technologii i relaksującej atmosfery sprawiają, że Twoja wizyta staje się
+                        pewnością siebie i zdrowiem. Nasza elegancka przychodnia dentystyczna to miejsce, w którym
+                        połączenie
+                        profesjonalizmu, nowoczesnej technologii i relaksującej atmosfery sprawiają, że Twoja wizyta staje
+                        się
                         nie tylko komfortowym doświadczeniem, ale również przyjemnością.
                     </p>
                 </div>
@@ -32,7 +34,8 @@
                     <p class="card-text">
                         Nasze nowoczesne gabinety dentystyczne są zaprojektowane tak, aby zapewnić Ci maksymalną wygodę i
                         bezpieczeństwo podczas zabiegów. Zastosowane przez nas najnowocześniejsze technologie pozwalają nam
-                        osiągnąć doskonałe rezultaty, przy minimalnym dyskomforcie dla Pacjenta. Oferujemy szeroki zakres usług,
+                        osiągnąć doskonałe rezultaty, przy minimalnym dyskomforcie dla Pacjenta. Oferujemy szeroki zakres
+                        usług,
                         od rutynowych zabiegów stomatologicznych, takich jak profilaktyka i wypełnienia, aż po bardziej
                         zaawansowane procedury, takie jak implantologia i ortodoncja.
                     </p>
@@ -44,7 +47,8 @@
                     <p class="card-text">
                         Nasze wnętrza są urządzone w eleganckim i spokojnym stylu, abyś mógł odprężyć się i poczuć się jak w
                         domu. Zadbaliśmy o każdy detal, by stworzyć harmonijną atmosferę, która pomaga złagodzić wszelkie
-                        obawy związane z wizytą u dentysty. Oferujemy także przyjemne dodatki, takie jak aromaterapia i muzyka
+                        obawy związane z wizytą u dentysty. Oferujemy także przyjemne dodatki, takie jak aromaterapia i
+                        muzyka
                         relaksacyjna, aby uczynić Twoją wizytę jeszcze bardziej relaksującą.
                     </p>
                 </div>

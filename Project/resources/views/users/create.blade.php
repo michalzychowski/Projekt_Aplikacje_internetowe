@@ -1,5 +1,5 @@
-@extends('layout')
-@section('title','Przychodnia dentystyczna')
+@extends('users.layout')
+@section('title', 'Przychodnia dentystyczna')
 
 @section('content')
     <div class="container">

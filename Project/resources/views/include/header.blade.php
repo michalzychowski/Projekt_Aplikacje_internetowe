@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Przychodnia dentystyczna</a>
+        <a class="navbar-brand" href="">Przychodnia dentystyczna</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -16,18 +16,20 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/pricelist">Cennik</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/make-appointment">Umów wizytę</a>
-                </li>
+                @if (!auth()->check())
+                    <li class="nav-item">
+                        <a class="nav-link" href="/make-appointment">Umów wizytę</a>
+                    </li>
+                @endif
                 @if (auth()->check())
-                <li class="nav-item">
-                    <form class="inline" method="POST" action="/logout">
-                        @csrf
-                        <button class="nav-link" type="submit">
-                            Wyloguj się
-                        </button>
-                    </form>
-                </li>
+                    <li class="nav-item">
+                        <form class="inline" method="POST" action="/logout">
+                            @csrf
+                            <button class="nav-link" type="submit">
+                                Wyloguj się
+                            </button>
+                        </form>
+                    </li>
                 @else
                     <li class="nav-item">
                         <a class="nav-link" href="/login">Zaloguj się</a>

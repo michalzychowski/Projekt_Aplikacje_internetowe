@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title','Przychodnia dentystyczna')
+@section('title', 'Przychodnia dentystyczna')
 
 @section('content')
     <div class="container">
@@ -26,7 +26,7 @@
                 <label for="doctor_id" class="form-label">Lekarz</label>
                 <select class="form-select" id="doctor_id" name="user_id" required>
                     @foreach ($doctors as $doctor)
-                    <option value="{{ $doctor->id }}">{{ $doctor->name }}</option>
+                        <option value="{{ $doctor->id }}">{{ $doctor->name }}</option>
                     @endforeach
                 </select>
             </div>
@@ -34,12 +34,12 @@
                 <label for="treatment_id" class="form-label">Zabieg</label>
                 <select class="form-select" id="treatment_id" name="treatment_id" required>
                     @foreach ($treatments as $treatment)
-                    <option value="{{ $treatment->id }}">{{ $treatment->name }} ({{$treatment->price}}zł)</option>
+                        <option value="{{ $treatment->id }}">{{ $treatment->name }} ({{ $treatment->price }}zł)</option>
                     @endforeach
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Utwórz</button>
         </form>
-        <a href="/">Powrót</a>
+        <a href="/" class="btn btn-info">Powrót</a>
     </div>
 @endsection

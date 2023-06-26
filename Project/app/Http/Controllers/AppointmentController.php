@@ -20,6 +20,12 @@ class AppointmentController extends Controller
         $appointment->update();
         return redirect("/");
     }
+
+    public function reject(Appointment $appointment){
+        $appointment->status = "rejected";
+        $appointment->update();
+        return redirect("/");
+    }
     public function destroy(Appointment $appointment){
         $appointment->delete();
         return redirect("/");
@@ -30,4 +36,8 @@ class AppointmentController extends Controller
         return redirect('/');
     }
 
+    public function treatment(){
+        $treatments = Treatment::all();
+        return view('/pricelist', compact('treatments'));
+    }
 }

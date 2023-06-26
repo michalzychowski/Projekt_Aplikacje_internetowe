@@ -28,10 +28,6 @@ class UserController extends Controller
         return redirect("/");
     }
 
-
-    public function pricelist(){
-        return view("pricelist");
-    }
     public function description(){
         return view("description");
     }
