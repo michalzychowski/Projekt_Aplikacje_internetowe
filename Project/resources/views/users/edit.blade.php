@@ -1,6 +1,22 @@
 @extends('users.layout')
 @section('title', 'Przychodnia dentystyczna')
 
+<style>
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url("/image/background2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(5px);
+    }
+</style>
+
 @section('content')
 
     <body>

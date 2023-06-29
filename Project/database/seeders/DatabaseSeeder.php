@@ -34,7 +34,7 @@ class DatabaseSeeder extends Seeder
             'role' => 'admin',
         ]);
 
-        // Tworzenie dwóch zabiegów
+        // Tworzenie zabiegów
         $treatment1 = Treatment::create([
             'name' => 'Badania lekarskie + raport o stanie zębów',
             'price' => 50.00,
