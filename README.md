@@ -4,13 +4,13 @@ Projekt na przedmiot "Aplikacje internetowe" na II roku studiów inżynierskich 
 
 ## Technologie
 Projekt został wykonany przy użyciu:
-* PHP 8.1 – język programowania aplikacji webowych 
-* Laravel 10.0 – framework PHP  
-* MySQL – relacyjna baza danych
-* Bootstrap 5.3 – framework frontendowy
-* Composer – menedżer pakietów PHP
+* PHP 8.1
+* Laravel 10.0 
+* MySQL (baza danych)
+* Bootstrap 5.3
+* Composer (menedżer pakietów PHP)
 * XAMPP / WAMP / MAMP – środowisko lokalne (Apache + MySQL + PHP)
-* Visual Studio Code – środowisko programistyczne  
+* Visual Studio Code 
 
 ## Wymagania
 Do uruchomienia projektu potrzebne są:
